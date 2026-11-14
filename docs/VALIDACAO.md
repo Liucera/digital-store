@@ -46,8 +46,18 @@ Conferência realizada em **13/11/2026**, com Node.js 22.15.0, npm e Chrome. A v
 
 ## Personalizações e escopo
 
+### Complemento: preparação do deploy
+
+Foram aprovadas 36 verificações adicionais no build de publicação, incluindo busca com parâmetros, abertura direta e atualização dos detalhes, aliases das rotas, imagens, fonte e mensagens para endereços inválidos. Não houve erro de JavaScript nem arquivo faltando nesses cenários. Uma nova conferência no endereço definitivo deve acompanhar cada publicação.
+
 O Figma orienta a identidade visual, os componentes e a distribuição do conteúdo. Fotos reais, categorias e textos foram personalizados conforme solicitado. A galeria de cada produto contém somente a foto correspondente e uma miniatura dessa foto. O componente de opções mantém suporte a cores, mas o seletor não é exibido nesta entrega.
 
 Esta atividade é de Front-end. Login, cadastro e pedidos são telas demonstrativas; não há autenticação, pagamento nem carrinho persistente. O ícone de carrinho é visual, como previsto na documentação. Alguns links institucionais do rodapé retornam à Home como destinos demonstrativos.
 
-API, deploy e pull request permanecem opcionais no enunciado. O repositório GitHub contém o código-fonte e as instruções para execução local.
+API, deploy e pull request são opcionais no enunciado. O repositório GitHub contém o código-fonte e as instruções para execução local e publicação. O catálogo permanece sem API externa, conforme definido para esta entrega.
+
+## Verificação básica de segurança
+
+Na conferência da entrega, não foram encontrados arquivos `.env`, chaves privadas ou padrões conhecidos de tokens na fonte e no build. A aplicação não utiliza backend, banco de dados, pagamentos, requisições de API ou inserção direta de HTML. A consulta `npm audit --omit=dev` retornou zero vulnerabilidades conhecidas nas dependências de produção.
+
+Essa conferência é limitada ao código e às dependências verificados. Não substitui uma auditoria completa da aplicação ou da infraestrutura de hospedagem.

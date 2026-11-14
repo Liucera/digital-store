@@ -5,5 +5,7 @@ dist
 !.env.example
 *.log
 .vite
+.vercel
+.netlify
 .DS_Store
 Thumbs.db

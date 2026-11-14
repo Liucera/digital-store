@@ -2,11 +2,23 @@
 
 Projeto acadêmico de Front-end da Geração Tech 4.0, desenvolvido com React, Vite e React Router. Inclui Home, catálogo e detalhes de produtos, com CSS próprio e recursos visuais locais.
 
+[Código-fonte](https://github.com/Liucera/digital-store)
+
 ## Executar no VS Code
 
 Requisitos: Node.js 22.12 ou superior e npm. A versão 20 também é compatível a partir da 20.19.
 
-Abra a pasta **Digital Store**, onde está o arquivo `package.json`. No terminal do Windows:
+Abra a pasta **Digital Store**, onde está o arquivo `package.json`.
+
+No terminal **PowerShell** do VS Code:
+
+```powershell
+cd "E:\Geração Tech 4.0\Digital Store"
+npm ci
+npm run dev
+```
+
+Se estiver usando o **Prompt de Comando (CMD)**:
 
 ```bat
 cd /d "E:\Geração Tech 4.0\Digital Store"
@@ -91,7 +103,11 @@ O layout usa o Figma como referência. As fotografias, textos e categorias foram
 
 Nomes, preços e avaliações compõem um catálogo de exemplo. O botão Comprar apenas confirma uma seleção: não gera pedidos nem realiza pagamentos. Cadastro, login e pedidos são telas auxiliares demonstrativas. Autenticação real, carrinho persistente e backend não fazem parte desta entrega de Front-end.
 
-API real, deploy e pull request são opcionais no enunciado. A entrega obrigatória é o link do repositório GitHub.
+API real, deploy e pull request são opcionais no enunciado. A entrega obrigatória é o link do repositório GitHub. O catálogo desta entrega usa dados locais, sem API externa.
+
+## Publicação
+
+O projeto está preparado para publicação na Vercel (`vercel.json`) ou no Netlify (`netlify.toml`). O processo de build e as instruções para publicar e atualizar o site estão em [docs/DEPLOY.md](docs/DEPLOY.md).
 
 ## Validação
 
